@@ -1,8 +1,10 @@
 import styled from "styled-components";
-import backpackImage from "../assets/img.png";
+import background from "../assets/background.svg";
 import { Avatar } from "../components/Avatar";
 import { KeyboardArrowRight, VpnKey } from "@mui/icons-material";
 import { mobile, tablet } from "../responsive";
+import { Spacer } from "../components/Spacer";
+import { Link } from "../components/Link";
 
 export const SignIn = () => {
     return (
@@ -19,9 +21,8 @@ export const SignIn = () => {
                         requests on Nomad Rental
                     </Subtitle>
                     <Spacer size={20}/>
-                    <Link size={14} style={{display: "flex", alignItems: "center"}}>
+                    <Link text="Learn more about our premium subscription" textSize={14}>
                         <KeyboardArrowRight/>
-                        Learn more about our premium subscription
                     </Link>
                     <Spacer/>
                 </Content>
@@ -32,7 +33,7 @@ export const SignIn = () => {
                         <Spacer/>
                         <Flex jc="space-between">
                             <Label>Password</Label>
-                            <Link>Forgot your password?</Link>
+                            <Link text="Forgot your password?"/>
                         </Flex>
                         <Input placeholder="Password"/>
 
@@ -42,13 +43,13 @@ export const SignIn = () => {
 
                         <Flex jc="center" ac="center">
                             <FooterText>Don't have an account?</FooterText>
-                            <Link style={{fontWeight: "500"}}>Sign up now</Link>
+                            <Link text="Sign up now" style={{fontWeight: "500"}}/>
                         </Flex>
                     </FormContent>
                 </Form>
             </LeftContainer>
             <RightContainer>
-                <Image src={backpackImage}/>
+                <Image src={background}/>
             </RightContainer>
         </Container>
     );
@@ -73,9 +74,9 @@ const LeftContainer = styled.div`
 const RightContainer = styled.div`
   flex: 1;
   height: 100%;
-  ${tablet({ display: "none" })}
-  ${mobile({ display: "none" })}
-`
+  ${tablet({display: "none"})}
+  ${mobile({display: "none"})}
+`;
 
 const Image = styled.img`
   width: 100%;
@@ -88,10 +89,6 @@ const Content = styled.div`
   flex-direction: column;
   align-items: flex-start;
   margin: 50px;
-`;
-
-const Spacer = styled.div`
-  margin: ${(props) => props.size || 10}px;
 `;
 
 const Title = styled.div`
@@ -110,12 +107,6 @@ const FooterText = styled.div`
   color: #59626A;
   font-size: 12px;
   margin-right: 5px;
-`
-
-const Link = styled.div`
-  color: #168EEA;
-  cursor: pointer;
-  font-size: ${(props => props.size || 12)}px;
 `;
 
 const FormContent = styled.div`
@@ -133,7 +124,7 @@ const Flex = styled.div`
   display: flex;
   justify-content: ${(props => props.jc || "flex-start")};
   align-content: ${(props => props.ac || "flex-start")};
-`
+`;
 
 const Label = styled.label`
   font-size: 12px;
