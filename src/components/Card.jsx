@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mobile, tablet } from "../responsive";
 
 export const Card = (props) => {
     return (
@@ -26,6 +27,10 @@ const Container = styled.div`
   box-shadow: 2px 2px 10px 1px #f3f3f3;
   border-radius: 7px;
   overflow: hidden;
+
+  ${tablet({
+    flexDirection: "column"
+  })}
 `;
 
 const LeftComponent = styled.div`
@@ -51,4 +56,9 @@ const Content = styled.div`
 const Image = styled.img`
   width: 100%;
   height: 100%;
+  object-fit: cover;
+
+  ${tablet({
+    maxHeight: "150px"
+  })}
 `;

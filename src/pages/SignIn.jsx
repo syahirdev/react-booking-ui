@@ -140,6 +140,7 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
+  cursor: pointer;
   margin-top: 15px;
   padding: 10px;
   border: none;

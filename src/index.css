@@ -24,7 +24,17 @@ code {
     color: #707070;
 }
 
+.link:hover {
+    color: #8d82fd;
+    background-color: #f1f0ff;
+}
+
 .active-link {
+    color: white;
+    background-color: #7C60FF;
+}
+
+.active-link:hover {
     color: white;
     background-color: #7C60FF;
 }

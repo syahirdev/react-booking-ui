@@ -96,6 +96,11 @@ const Component = styled.div`
   margin: 5px;
   color: ${(props => props.isActive && "white")};
   background-color: ${(props => props.isActive && "#7C60FF")};
+
+  &:hover {
+    color: #8d82fd;
+    background-color: #f1f0ff;
+  }
 `;
 
 const Text = styled.div`
