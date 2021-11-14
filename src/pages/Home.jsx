@@ -1,13 +1,15 @@
 import styled from "styled-components";
 import { Sidebar } from "../components/Sidebar";
 import { Bookings } from "./Bookings";
+import { Account } from "./Account";
 
 export const Home = () => {
     return (
         <Container>
             <Sidebar/>
             <Content>
-                <Bookings/>
+                {/*<Bookings/>*/}
+                <Account/>
             </Content>
         </Container>
     );

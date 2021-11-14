@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Card = (props) => {
-    console.log(props);
     return (
         <Container>
             {

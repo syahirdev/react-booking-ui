@@ -11,7 +11,7 @@ export const Sidebar = () => {
 
     return (
         <Container>
-            <Image src={logo}/>
+            <Image src={logo} width="170em"/>
 
             <Spacer size={40}/>
 
