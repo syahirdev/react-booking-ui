@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-booking-ui/static/css/main.139e6429.chunk.css",
+    "main.js": "/react-booking-ui/static/js/main.e42cd98b.chunk.js",
+    "main.js.map": "/react-booking-ui/static/js/main.e42cd98b.chunk.js.map",
+    "runtime-main.js": "/react-booking-ui/static/js/runtime-main.d04141e5.js",
+    "runtime-main.js.map": "/react-booking-ui/static/js/runtime-main.d04141e5.js.map",
+    "static/css/2.3aec4a87.chunk.css": "/react-booking-ui/static/css/2.3aec4a87.chunk.css",
+    "static/js/2.8296193d.chunk.js": "/react-booking-ui/static/js/2.8296193d.chunk.js",
+    "static/js/2.8296193d.chunk.js.map": "/react-booking-ui/static/js/2.8296193d.chunk.js.map",
+    "index.html": "/react-booking-ui/index.html",
+    "static/css/2.3aec4a87.chunk.css.map": "/react-booking-ui/static/css/2.3aec4a87.chunk.css.map",
+    "static/css/main.139e6429.chunk.css.map": "/react-booking-ui/static/css/main.139e6429.chunk.css.map",
+    "static/js/2.8296193d.chunk.js.LICENSE.txt": "/react-booking-ui/static/js/2.8296193d.chunk.js.LICENSE.txt",
+    "static/media/background.1913d1f7.svg": "/react-booking-ui/static/media/background.1913d1f7.svg",
+    "static/media/logo.ae641596.svg": "/react-booking-ui/static/media/logo.ae641596.svg",
+    "static/media/room.3370afe9.png": "/react-booking-ui/static/media/room.3370afe9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d04141e5.js",
+    "static/css/2.3aec4a87.chunk.css",
+    "static/js/2.8296193d.chunk.js",
+    "static/css/main.139e6429.chunk.css",
+    "static/js/main.e42cd98b.chunk.js"
+  ]
+}
