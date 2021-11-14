@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Link = (props) => {
+export const Links = (props) => {
     return (
         <Container textSize={props.textSize}>
             {props.children}

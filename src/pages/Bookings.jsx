@@ -8,7 +8,7 @@ import {
     Star,
     Telegram
 } from "@mui/icons-material";
-import { Link } from "../components/Link";
+import { Links } from "../components/Links";
 import { Spacer } from "../components/Spacer";
 import { Card } from "../components/Card";
 import bookingImg from "../assets/room.png";
@@ -84,10 +84,10 @@ export const Bookings = () => {
 
             <Spacer size={20}/>
 
-            <Link>
+            <Links>
                 <KeyboardArrowRight/>
                 Learn more about our premium subscription
-            </Link>
+            </Links>
 
             <Spacer size={30}/>
 

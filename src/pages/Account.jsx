@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { AccountCircle, KeyboardArrowRight } from "@mui/icons-material";
-import { Link } from "../components/Link";
+import { Links } from "../components/Links";
 import { Spacer } from "../components/Spacer";
 import { Card } from "../components/Card";
 import { useState } from "react";
@@ -119,10 +119,10 @@ export const Account = () => {
 
             <Spacer size={20}/>
 
-            <Link>
+            <Links>
                 <KeyboardArrowRight/>
                 Learn more about our premium subscription
-            </Link>
+            </Links>
 
             <Spacer size={30}/>
 
@@ -229,5 +229,5 @@ const FooterButton = styled.button`
   border: none;
   border-radius: 7px;
   color: white;
-  background-color: #786AFF;
+  background-color: #7C60FF;
 `;

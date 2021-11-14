@@ -4,8 +4,10 @@ import { useState } from "react";
 import { ConnectWithoutContact, ExitToApp, Help, Hotel, Inbox, ManageAccounts } from "@mui/icons-material";
 import { Avatar } from "./Avatar";
 import { Spacer } from "./Spacer";
+import { NavLink, useHistory } from "react-router-dom";
 
 export const Sidebar = () => {
+    const history = useHistory();
     const [name] = useState("John Doe");
     const [status] = useState("Premium Nomad");
 
@@ -21,10 +23,10 @@ export const Sidebar = () => {
 
             <Spacer size={20}/>
 
-            <Component isActive={true}>
+            <NavLink to="/bookings" className="link" activeClassName="active-link">
                 <Inbox/>
                 <Text>Bookings</Text>
-            </Component>
+            </NavLink>
 
             <Spacer size={20}/>
 
@@ -32,10 +34,10 @@ export const Sidebar = () => {
                 <Hotel/>
                 <Text>Refer and Earn</Text>
             </Component>
-            <Component>
+            <NavLink to="/account" className="link" activeClassName="active-link">
                 <ManageAccounts/>
                 <Text>Account Settings</Text>
-            </Component>
+            </NavLink>
 
             <Spacer size={20}/>
 
@@ -49,7 +51,10 @@ export const Sidebar = () => {
                 <Text>FAQ</Text>
             </Component>
 
-            <Component style={{justifySelf: "flex-end"}}>
+            <Component
+                style={{justifySelf: "flex-end"}}
+                onClick={() => history.push("/")}
+            >
                 <ExitToApp/>
                 <Text>Sign out</Text>
             </Component>

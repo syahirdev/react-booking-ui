@@ -4,9 +4,11 @@ import { Avatar } from "../components/Avatar";
 import { KeyboardArrowRight, VpnKey } from "@mui/icons-material";
 import { mobile, tablet } from "../responsive";
 import { Spacer } from "../components/Spacer";
-import { Link } from "../components/Link";
+import { Links } from "../components/Links";
+import { useHistory } from "react-router-dom";
 
 export const SignIn = () => {
+    const history = useHistory();
     return (
         <Container>
             <LeftContainer>
@@ -21,9 +23,9 @@ export const SignIn = () => {
                         requests on Nomad Rental
                     </Subtitle>
                     <Spacer size={20}/>
-                    <Link text="Learn more about our premium subscription" textSize={14}>
+                    <Links text="Learn more about our premium subscription" textSize={14}>
                         <KeyboardArrowRight/>
-                    </Link>
+                    </Links>
                     <Spacer/>
                 </Content>
                 <Form>
@@ -33,17 +35,17 @@ export const SignIn = () => {
                         <Spacer/>
                         <Flex jc="space-between">
                             <Label>Password</Label>
-                            <Link text="Forgot your password?"/>
+                            <Links text="Forgot your password?"/>
                         </Flex>
                         <Input placeholder="Password"/>
 
-                        <Button>Sign in</Button>
+                        <Button onClick={() => history.push("/bookings")}>Sign in</Button>
 
                         <Spacer size={20}/>
 
                         <Flex jc="center" ac="center">
                             <FooterText>Don't have an account?</FooterText>
-                            <Link text="Sign up now" style={{fontWeight: "500"}}/>
+                            <Links text="Sign up now" style={{fontWeight: "500"}}/>
                         </Flex>
                     </FormContent>
                 </Form>
