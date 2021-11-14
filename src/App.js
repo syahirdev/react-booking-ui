@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { SignIn } from "./pages/SignIn";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { Sidebar } from "./components/Sidebar";
 import { Account } from "./pages/Account";
 import { Bookings } from "./pages/Bookings";
