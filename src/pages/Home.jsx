@@ -19,4 +19,5 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
+  margin: 30px;
 `;
