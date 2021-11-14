@@ -37,7 +37,7 @@ export const SignIn = () => {
                             <Label>Password</Label>
                             <Links text="Forgot your password?"/>
                         </Flex>
-                        <Input placeholder="Password"/>
+                        <Input type="password" placeholder="Password"/>
 
                         <Button onClick={() => history.push("/bookings")}>Sign in</Button>
 
@@ -137,6 +137,11 @@ const Input = styled.input`
   border: none;
   padding: 12px;
   border-radius: 5px;
+
+  &:focus {
+    outline: 1px solid #786AFF;
+    box-shadow: 0px 0px 3px #786AFF;
+  }
 `;
 
 const Button = styled.button`
@@ -147,4 +152,10 @@ const Button = styled.button`
   border-radius: 7px;
   color: white;
   background-color: #786AFF;
+
+  &:hover {
+    transition: all 0.2s ease-in;
+    color: #f1f0ff;
+    background-color: #7C60FF;
+  }
 `;
